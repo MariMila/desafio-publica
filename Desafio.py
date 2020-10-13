@@ -36,6 +36,7 @@ def main():
             entrada = input("Digite sua escolha (0-9): ")
         if entrada == 0:
             salva = input('Se você deseja salvar os jogos inseridos até aqui, por favor digite "Sim": ')
+            salva = salva.lower()
             if 's' in salva:
                 with open('salvos.py', 'w') as arquivo:
                     arquivo.write(fdd.para_salvar(pontuacoes))

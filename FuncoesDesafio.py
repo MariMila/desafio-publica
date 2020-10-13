@@ -123,6 +123,7 @@ def remove_jogo(pontuacoes):
 def apaga_dados(pontuacoes):
     """recebe a lista com as pontuações e a limpa"""
     entrada = input("Digite 'sim' se você tem certeza que deseja apagar todos os jogos registrados: ")
+    entrada = entrada.lower()
     if 's' in entrada:
         pontuacoes.clear()
     else:
